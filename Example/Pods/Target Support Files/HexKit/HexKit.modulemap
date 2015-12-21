@@ -1,0 +1,6 @@
+framework module HexKit {
+  umbrella header "HexKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

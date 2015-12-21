@@ -15,6 +15,14 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		996909111C285EB100289444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996909101C285EB100289444 /* Assets.xcassets */; };
+		996909131C28668900289444 /* Scene.plist in Resources */ = {isa = PBXBuildFile; fileRef = 996909121C28668900289444 /* Scene.plist */; };
+		996909171C289D0C00289444 /* TestThatThisWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909161C289D0C00289444 /* TestThatThisWorks.swift */; };
+		9969091F1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969091E1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */; };
+		9969092F1C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909271C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift */; };
+		996909301C28A92200289444 /* TestHexCenterPointsOddFlat6x6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909261C28A73C00289444 /* TestHexCenterPointsOddFlat6x6.swift */; };
+		996909351C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909341C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */; };
+		996909371C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909361C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		678A6B4E7FC07143C2192B9B /* Pods_HexKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D04B0D49F85A03A619FB23F /* HexKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HexKit.podspec; path = ../HexKit.podspec; sourceTree = "<group>"; };
+		996909101C285EB100289444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		996909121C28668900289444 /* Scene.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Scene.plist; sourceTree = "<group>"; };
+		996909161C289D0C00289444 /* TestThatThisWorks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestThatThisWorks.swift; sourceTree = "<group>"; };
+		9969091E1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridEvenHexPointTopped.swift; sourceTree = "<group>"; };
+		996909261C28A73C00289444 /* TestHexCenterPointsOddFlat6x6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHexCenterPointsOddFlat6x6.swift; sourceTree = "<group>"; };
+		996909271C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHexCenterPointsEvenFlat6x6.swift; sourceTree = "<group>"; };
+		996909341C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridOddHexPointTopped.swift; sourceTree = "<group>"; };
+		996909361C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridOddHexFlatTopped.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,7 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				996909101C285EB100289444 /* Assets.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -108,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
+				996909121C28668900289444 /* Scene.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +135,12 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				996909161C289D0C00289444 /* TestThatThisWorks.swift */,
+				9969091E1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */,
+				996909341C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */,
+				996909361C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */,
+				996909261C28A73C00289444 /* TestHexCenterPointsOddFlat6x6.swift */,
+				996909271C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -209,6 +233,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -246,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				996909131C28668900289444 /* Scene.plist in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				996909111C285EB100289444 /* Assets.xcassets in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +394,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996909371C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				9969091F1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift in Sources */,
+				9969092F1C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift in Sources */,
+				996909171C289D0C00289444 /* TestThatThisWorks.swift in Sources */,
+				996909301C28A92200289444 /* TestHexCenterPointsOddFlat6x6.swift in Sources */,
+				996909351C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +524,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -503,6 +537,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

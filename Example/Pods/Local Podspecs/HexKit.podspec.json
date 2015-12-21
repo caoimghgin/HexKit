@@ -1,0 +1,25 @@
+{
+  "name": "HexKit",
+  "version": "0.1.0",
+  "summary": "A short description of HexKit.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/HexKit",
+  "license": "MIT",
+  "authors": {
+    "Kevin Muldoon": "caoimghgin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/HexKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "HexKit": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
