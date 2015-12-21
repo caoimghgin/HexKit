@@ -26,7 +26,8 @@ class ViewController: UIViewController {
         scene.placeUnit(scene.tile(q: 3, r: -1))
         scene.placeUnit(scene.tile(q: 2, r: -1))
         scene.placeUnit(scene.tile(q: 1, r: 0))
-        
+        scene.placeUnit(scene.tile(q: 1, r: 1))
+
         self.navigationController?.toolbarHidden = false;
         self.navigationController?.navigationBarHidden = true;
     }
