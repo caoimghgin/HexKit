@@ -17,7 +17,6 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		996909111C285EB100289444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996909101C285EB100289444 /* Assets.xcassets */; };
 		996909131C28668900289444 /* Scene.plist in Resources */ = {isa = PBXBuildFile; fileRef = 996909121C28668900289444 /* Scene.plist */; };
-		996909171C289D0C00289444 /* TestThatThisWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909161C289D0C00289444 /* TestThatThisWorks.swift */; };
 		9969091F1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969091E1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */; };
 		9969092F1C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909271C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift */; };
 		996909301C28A92200289444 /* TestHexCenterPointsOddFlat6x6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909261C28A73C00289444 /* TestHexCenterPointsOddFlat6x6.swift */; };
@@ -57,7 +56,6 @@
 		8D04B0D49F85A03A619FB23F /* HexKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HexKit.podspec; path = ../HexKit.podspec; sourceTree = "<group>"; };
 		996909101C285EB100289444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996909121C28668900289444 /* Scene.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Scene.plist; sourceTree = "<group>"; };
-		996909161C289D0C00289444 /* TestThatThisWorks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestThatThisWorks.swift; sourceTree = "<group>"; };
 		9969091E1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridEvenHexPointTopped.swift; sourceTree = "<group>"; };
 		996909261C28A73C00289444 /* TestHexCenterPointsOddFlat6x6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHexCenterPointsOddFlat6x6.swift; sourceTree = "<group>"; };
 		996909271C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHexCenterPointsEvenFlat6x6.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
-				996909161C289D0C00289444 /* TestThatThisWorks.swift */,
 				9969091E1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */,
 				996909341C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */,
 				996909361C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */,
@@ -398,7 +395,6 @@
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 				9969091F1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift in Sources */,
 				9969092F1C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift in Sources */,
-				996909171C289D0C00289444 /* TestThatThisWorks.swift in Sources */,
 				996909301C28A92200289444 /* TestHexCenterPointsOddFlat6x6.swift in Sources */,
 				996909351C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift in Sources */,
 			);

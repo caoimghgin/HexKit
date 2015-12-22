@@ -1,6 +1,6 @@
 # HexKit
 
-[![CI Status](http://img.shields.io/travis/caoimghgin/HexKit.svg?style=flat)](https://travis-ci.org/Kevin Muldoon/HexKit)
+[![CI Status](http://img.shields.io/travis/caoimghgin/HexKit.svg?style=flat)](https://travis-ci.org/caoimghgin/HexKit)
 <!--
 [![Version](https://img.shields.io/cocoapods/v/HexKit.svg?style=flat)](http://cocoapods.org/pods/HexKit)
 [![License](https://img.shields.io/cocoapods/l/HexKit.svg?style=flat)](http://cocoapods.org/pods/HexKit)
