@@ -1,6 +1,7 @@
 # HexKit
 
 [![CI Status](http://img.shields.io/travis/caoimghgin/HexKit.svg?style=flat)](https://travis-ci.org/caoimghgin/HexKit)
+[![Coverage Status](https://coveralls.io/repos/caoimghgin/HexKit/badge.svg?branch=master&service=github)](https://coveralls.io/github/caoimghgin/HexKit?branch=master)
 <!--
 [![Version](https://img.shields.io/cocoapods/v/HexKit.svg?style=flat)](http://cocoapods.org/pods/HexKit)
 [![License](https://img.shields.io/cocoapods/l/HexKit.svg?style=flat)](http://cocoapods.org/pods/HexKit)
