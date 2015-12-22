@@ -7,30 +7,11 @@
 //
 
 import XCTest
-import HexKit
 
 class TestThatThisWorks: XCTestCase {
-
-    let width = 50
-    let height = 50
-    let gridShape = Grid.Shape.Even
-    let hexShape = Tile.Shape.PointTopped
-    let hexRadius = 44.0
-    
-    var scene : Scene!
     
     override func setUp() {
         super.setUp()
-        
-        HexKit.sharedInstance.start(
-            Grid.Size(width : width, height : height),
-            gridShape: gridShape,
-            tileShape: hexShape,
-            tileRadius: hexRadius
-        )
-        
-        self.scene = Scene(frame: CGRectZero)
-        
     }
     
     override func tearDown() {
@@ -41,7 +22,7 @@ class TestThatThisWorks: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssert(1==1)
+        XCTAssert(1==42)
     }
 
     func testPerformanceExample() {
