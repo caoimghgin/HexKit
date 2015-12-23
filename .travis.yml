@@ -9,4 +9,6 @@ script:
   -scheme HexKit-Example -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6"
   GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES clean test | xcpretty -c
 - pod lib lint --quick
+notifications:
+  slack: robotjackalope:6MLlViIekidGtX89coigo87D
 after_success: slather
