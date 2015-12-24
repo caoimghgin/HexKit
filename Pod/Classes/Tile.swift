@@ -135,6 +135,16 @@ public class Tile: Equatable, Hashable, Comparable, CustomStringConvertible {
         return HexKit.sharedInstance.neighbors(self)
     }
     
+    public func occupyingUnitsDetail() -> String {
+        
+        var info = ""
+        for unit in self.units {
+            info = info+"\r"+unit.description
+        }
+        
+        return info
+    }
+    
     class func keyFormat(q q:Int, r:Int) -> String {
         return String(format: "%03dx%03d", arguments: [q, r])
     }

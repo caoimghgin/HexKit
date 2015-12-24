@@ -15,7 +15,8 @@ class Board : UIView, UIGestureRecognizerDelegate {
     var arena = Arena()
     var grid = Grid()
     var transit = Transit()
-    
+    var sceneDelegate = HexKitSceneDelegate?()
+
     init() {
         
         super.init(frame: grid.frame)
@@ -41,9 +42,12 @@ class Board : UIView, UIGestureRecognizerDelegate {
     
     func tapGestureRecognizerAction(gesture : UITapGestureRecognizer) {
     
-        let tile = Touch.tile(gesture) ; print(tile)
+        let tile = Touch.tile(gesture)
         
-        if (tile.units.count > 1) {
+        if (tile.units.count > 0) {
+            
+            self.sceneDelegate?.tileContainingUnitsWasTapped(tile)
+            
             let unit = tile.units.first
             unit!.superview!.sendSubviewToBack(unit!)
             
@@ -129,7 +133,7 @@ class Board : UIView, UIGestureRecognizerDelegate {
         if (tile.units.count > 0) {
             
             let unit = tile.units.first
-            
+                        
             if (unit?.alliance == HexKit.sharedInstance.turn) {
                 return true
             } else {

@@ -9,11 +9,10 @@
 import UIKit
 import HexKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, HexKitSceneDelegate {
     
     private lazy var scene:Scene = {
-        HexKit.sharedInstance.start("Scene")
-        return Scene(frame: self.view.frame)
+        return Scene(controller: self, parameters: "Scene")
     }()
 
     override func viewDidLoad() {
@@ -39,6 +38,21 @@ class ViewController: UIViewController {
     
     override func prefersStatusBarHidden() -> Bool {
         return true;
+    }
+    
+    func tileContainingUnitsWasTapped(tile: Tile) {
+        print("TOUCHA --> \(tile)")
+        
+        let info = tile.occupyingUnitsDetail()
+        let alertController = UIAlertController(title: "Unit Detail", message: "We've returned a tile object containing all the units it contains. We can show more detailed information about those units here. Obviously, not in a standard UIAlertController but in something more customized.\r\r" + info, preferredStyle: .Alert)
+        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in}
+        alertController.addAction(OKAction)
+        
+        self.presentViewController(alertController, animated: true) {
+            // ...
+        }
+        
+        
     }
 
 }

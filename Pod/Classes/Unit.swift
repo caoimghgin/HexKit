@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Unit : UIView {
+public class Unit : UIView {
     
     enum Alliance : Int {
         case Red
@@ -23,7 +23,7 @@ class Unit : UIView {
     internal var movementRemaining = 3
     internal var imageView = UIImageView.init(image: UIImage.init(named: "BritishTank"))
     
-    required override init(frame: CGRect) {
+    required override public init(frame: CGRect) {
         super.init(frame: frame)
         self.imageView.image = UIImage.init(named: "BritishTank")
         self.imageView.center = self.center
@@ -33,7 +33,7 @@ class Unit : UIView {
 
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

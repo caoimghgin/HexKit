@@ -8,9 +8,21 @@
 
 import UIKit
 
+public protocol HexKitSceneDelegate {
+    func tileContainingUnitsWasTapped(tile : Tile)
+}
+
 public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDelegate {
     
     var board : Board
+    var sceneDelegate = HexKitSceneDelegate?()
+    
+    public convenience init(controller:UIViewController, parameters: String) {
+        HexKit.sharedInstance.start(parameters)
+        self.init(frame:controller.view.frame)
+        self.sceneDelegate = controller as? HexKitSceneDelegate
+        self.board.sceneDelegate = self.sceneDelegate
+    }
 
     public override init(frame: CGRect) {
         
@@ -71,6 +83,7 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
     
     public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
         
+        
 //        return false; /* uncomment to disable UIScrollView scrolling **/
         
         var result:Bool
@@ -96,20 +109,20 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
         scrollView.contentSize = CGSizeMake(board.frame.size.width * scale, board.frame.size.height * scale) 
     }
     
-    override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
-        let touch = touches.first
-        let point = touch!.locationInView(self)
-        let tile = self.tile(point);
-        
-        print("expected = \(tile.hex)")
-        print("actual = Touch.hex(CGPointMake\(point))")
-        print("XCTAssertEqual(actual.r, expected.r, \"\")")
-        print("XCTAssertEqual(actual.q, expected.q, \"\")")
-        print("\r")
-
-//        print(tile.hex)
-    }
+//    override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        
+//        let touch = touches.first
+//        let point = touch!.locationInView(self)
+//        let tile = self.tile(point);
+//        
+////        print("expected = \(tile.hex)")
+////        print("actual = Touch.hex(CGPointMake\(point))")
+////        print("XCTAssertEqual(actual.r, expected.r, \"\")")
+////        print("XCTAssertEqual(actual.q, expected.q, \"\")")
+////        print("\r")
+//
+////        print(tile.hex)
+//    }
 
     public func tile(q q:Int, r:Int) -> Tile {
         
