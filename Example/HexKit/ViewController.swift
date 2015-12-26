@@ -25,7 +25,6 @@ class ViewController: UIViewController, HexKitSceneDelegate {
         scene.placeUnit(scene.tile(q: 3, r: -1))
         scene.placeUnit(scene.tile(q: 2, r: -1))
         scene.placeUnit(scene.tile(q: 1, r: 0))
-        scene.placeUnit(scene.tile(q: 1, r: 1))
 
         self.navigationController?.toolbarHidden = false;
         self.navigationController?.navigationBarHidden = true;
@@ -41,7 +40,6 @@ class ViewController: UIViewController, HexKitSceneDelegate {
     }
     
     func tileContainingUnitsWasTapped(tile: Tile) {
-        print("TOUCHA --> \(tile)")
         
         let info = tile.occupyingUnitsDetail()
         let alertController = UIAlertController(title: "Unit Detail", message: "We've returned a tile object containing all the units it contains. We can show more detailed information about those units here. Obviously, not in a standard UIAlertController but in something more customized.\r\r" + info, preferredStyle: .Alert)
