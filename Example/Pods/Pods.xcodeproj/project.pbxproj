@@ -72,6 +72,9 @@
 		9341B96D63EF6C54A1F906A1BBAEAF46 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D815E4D0509F64977CC911FFE53B202 /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9646787942A85613FE77F45794E9B5CD /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249D63C7453302DA79EBB9E0440A1F9 /* BeginWith.swift */; };
 		996909151C287B9400289444 /* Dictionary+HexKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909141C287B9400289444 /* Dictionary+HexKit.swift */; };
+		99742C611C3031FB00AF60B6 /* Transit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99742C601C3031FB00AF60B6 /* Transit.swift */; };
+		99742C631C30345400AF60B6 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99742C621C30345400AF60B6 /* Grid.swift */; };
+		99742C651C30357000AF60B6 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99742C641C30357000AF60B6 /* Move.swift */; };
 		997539921C28523200B5E479 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975398C1C28523200B5E479 /* Geometry.swift */; };
 		997539931C28523200B5E479 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975398D1C28523200B5E479 /* Scene.swift */; };
 		997539941C28523200B5E479 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975398E1C28523200B5E479 /* Board.swift */; };
@@ -294,6 +297,9 @@
 		9823197EA5904A9150FB0AD8B09841E6 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		983197F6CC870B4E78D23FCBEEAE9845 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
 		996909141C287B9400289444 /* Dictionary+HexKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+HexKit.swift"; sourceTree = "<group>"; };
+		99742C601C3031FB00AF60B6 /* Transit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transit.swift; sourceTree = "<group>"; };
+		99742C621C30345400AF60B6 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		99742C641C30357000AF60B6 /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		9975398C1C28523200B5E479 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		9975398D1C28523200B5E479 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		9975398E1C28523200B5E479 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
@@ -765,6 +771,9 @@
 				997539901C28523200B5E479 /* HexKit.swift */,
 				997539911C28523200B5E479 /* Unit.swift */,
 				996909141C287B9400289444 /* Dictionary+HexKit.swift */,
+				99742C601C3031FB00AF60B6 /* Transit.swift */,
+				99742C621C30345400AF60B6 /* Grid.swift */,
+				99742C641C30357000AF60B6 /* Move.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1128,11 +1137,14 @@
 				996909151C287B9400289444 /* Dictionary+HexKit.swift in Sources */,
 				997539961C28523200B5E479 /* HexKit.swift in Sources */,
 				997539931C28523200B5E479 /* Scene.swift in Sources */,
+				99742C631C30345400AF60B6 /* Grid.swift in Sources */,
 				8A58C4542357346EBE61545C5CBFECE2 /* HexKit-dummy.m in Sources */,
 				997539941C28523200B5E479 /* Board.swift in Sources */,
+				99742C611C3031FB00AF60B6 /* Transit.swift in Sources */,
 				997539951C28523200B5E479 /* Tile.swift in Sources */,
 				997539971C28523200B5E479 /* Unit.swift in Sources */,
 				997539921C28523200B5E479 /* Geometry.swift in Sources */,
+				99742C651C30357000AF60B6 /* Move.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  HexKit
 //
-//  Created by Kevin Muldoon on 12/21/2015.
-//  Copyright (c) 2015 Kevin Muldoon. All rights reserved.
+//  Copyright © 2015 Kevin Muldoon.
+//  https://github.com/caoimghgin/HexKit
 //
 
 import UIKit

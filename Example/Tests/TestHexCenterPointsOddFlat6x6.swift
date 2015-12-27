@@ -2,8 +2,8 @@
 //  TestHexCenterPointsOddFlat6x6.swift
 //  HexKit
 //
-//  Created by Kevin Muldoon on 8/17/15.
-//  Copyright (c) 2015 RobotJackalope. All rights reserved.
+//  Copyright © 2015 Kevin Muldoon.
+//  https://github.com/caoimghgin/HexKit
 //
 
 import UIKit
