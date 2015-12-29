@@ -52,6 +52,20 @@ class TestNeighboringUnitsFor_GridOddHexPointTopped: XCTestCase {
         
     }
     
+    func testNeighborsTopishLeftish() {
+        
+        let hex = HexKit.sharedInstance.tile(q: 2, r: 2)
+        let neighbors = HexKit.sharedInstance.neighbors(hex!)
+        
+        XCTAssertTrue(neighbors[0].hex == Hex(q: 2, r: 1))
+        XCTAssertTrue(neighbors[1].hex == Hex(q: 3, r: 1))
+        XCTAssertTrue(neighbors[2].hex == Hex(q: 3, r: 2))
+        XCTAssertTrue(neighbors[3].hex == Hex(q: 2, r: 3))
+        XCTAssertTrue(neighbors[4].hex == Hex(q: 1, r: 3))
+        XCTAssertTrue(neighbors[5].hex == Hex(q: 1, r: 2))
+        
+    }
+    
     func testNeighborsBottomRight() {
         
         let hex = HexKit.sharedInstance.tile(q: 25, r: 49)
