@@ -30,7 +30,7 @@ import Foundation
 public class HexKit
 {
     public static let sharedInstance = HexKit()
-
+    
     var tiles : [String: Tile] = [:]
     var gridSize : Grid.Size
     var gridShape : Grid.Shape
@@ -40,7 +40,15 @@ public class HexKit
     var tileOffset : Point
     var hexRadius : Double
     var firstColumn: [Int] = []
-
+    let directions = [
+        Cube(x:0, y:1, z:-1),
+        Cube(x:1, y:0, z:-1),
+        Cube(x:1, y:-1, z:0),
+        Cube(x:0, y:-1, z:1),
+        Cube(x:-1, y:0, z:1),
+        Cube(x:-1, y:1, z:0)
+    ]
+    
     var turn = Unit.Alliance.Blue
     
     enum GridTileShape : Int {
@@ -114,7 +122,7 @@ public class HexKit
                 tileRadius: tileRadius
                 
             )
-
+            
         }
         
     }
@@ -174,7 +182,7 @@ public class HexKit
         for (var r = 0; r < gridSize.height; ++r) {
             
             var row : [Cube] = []
-
+            
             for (var q = 0; q < gridSize.width; ++q) {
                 
                 var x : Int
@@ -239,7 +247,7 @@ public class HexKit
         for (var r = 0; r < gridSize.height; ++r) {
             
             var row : [Cube] = []
-
+            
             for (var q = 0; q < gridSize.width; ++q) {
                 
                 var x : Int
@@ -516,27 +524,21 @@ public class HexKit
         var result: [Tile] = []
         
         let directions = [
-            Hex(q: Int(-1), r: Int(0)),
-            Hex(q: Int(-1), r: Int(1)),
-            Hex(q: Int(0), r: Int(1)),
-            Hex(q: Int(1), r: Int(0)),
-            Hex(q: Int(1), r: Int(-1)),
-            Hex(q: Int(0), r: Int(-1)),
+            Hex.Convert(self.directions[0]),
+            Hex.Convert(self.directions[1]),
+            Hex.Convert(self.directions[2]),
+            Hex.Convert(self.directions[3]),
+            Hex.Convert(self.directions[4]),
+            Hex.Convert(self.directions[5])
         ]
         
         for point in directions {
             
-            let x = tile.hex.r + point.r
-            let y = tile.hex.q + point.q
-            
-            let tile = self.tile(q: y, r: x)
-            
-            if (tile != nil) {
-                result.append((tile)!)
-            }
+            let tile = self.tile(q: tile.hex.q + point.q, r: tile.hex.r + point.r)
+            if (tile != nil) { result.append((tile)!)}
             
         }
         return result;
     }
-
+    
 }

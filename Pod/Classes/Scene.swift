@@ -42,12 +42,12 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
         self.sceneDelegate = controller as? HexKitSceneDelegate
         self.board.sceneDelegate = self.sceneDelegate
     }
-
+    
     public override init(frame: CGRect) {
         
         self.board = Board()
         super.init(frame: frame)
-
+        
         contentSize = CGSize(width: board.frame.width/2, height: board.frame.height/2)
         showsHorizontalScrollIndicator = true;
         showsVerticalScrollIndicator = true;
@@ -58,7 +58,7 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
         delegate = self
         
         addSubview(board)
-    
+        
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -87,7 +87,7 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
         let unit = self.createUnit()
         self.placeUnit(unit, tile: tile)
     }
- 
+    
     public func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return board
     }
@@ -102,8 +102,7 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
     
     public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
         
-        
-//        return false; /* uncomment to disable UIScrollView scrolling **/
+        //        return false; /* uncomment to disable UIScrollView scrolling **/
         
         var result:Bool
         let tile = self.tile(touch.locationInView(self));
@@ -124,27 +123,27 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
     }
     
     public func scrollViewDidEndZooming(scrollView: UIScrollView, withView view: UIView?, atScale scale: CGFloat) {
-//        scrollView.contentSize = CGSize(width: self.frame.width / 2, height: self.frame.height / 2)
-        scrollView.contentSize = CGSizeMake(board.frame.size.width * scale, board.frame.size.height * scale) 
+        //        scrollView.contentSize = CGSize(width: self.frame.width / 2, height: self.frame.height / 2)
+        scrollView.contentSize = CGSizeMake(board.frame.size.width * scale, board.frame.size.height * scale)
     }
     
-//    override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-//        
-//        let touch = touches.first
-//        let point = touch!.locationInView(self)
-//        let tile = self.tile(point);
-//        
-////        print("expected = \(tile.hex)")
-////        print("actual = Touch.hex(CGPointMake\(point))")
-////        print("XCTAssertEqual(actual.r, expected.r, \"\")")
-////        print("XCTAssertEqual(actual.q, expected.q, \"\")")
-////        print("\r")
-//
-////        print(tile.hex)
-//    }
-
+    //    override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    //
+    //        let touch = touches.first
+    //        let point = touch!.locationInView(self)
+    //        let tile = self.tile(point);
+    //
+    ////        print("expected = \(tile.hex)")
+    ////        print("actual = Touch.hex(CGPointMake\(point))")
+    ////        print("XCTAssertEqual(actual.r, expected.r, \"\")")
+    ////        print("XCTAssertEqual(actual.q, expected.q, \"\")")
+    ////        print("\r")
+    //
+    ////        print(tile.hex)
+    //    }
+    
     public func tile(q q:Int, r:Int) -> Tile {
-        
+        print("q;\(q)r:\(r)");
         let tile = HexKit.sharedInstance.tile(q: q, r : r)!
         return tile
         
@@ -155,7 +154,7 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
         let tile = HexKit.sharedInstance.tile(hex)!
         return tile
     }
-
+    
 }
 
 class Touch {
@@ -204,7 +203,7 @@ class Touch {
     class func pointToAxial_Odd_R(point:CGPoint) -> Hex {
         
         let tile = HexKit.sharedInstance.tile()
-    
+        
         let x = (Double(point.x) - (tile!.ø / 2)) / tile!.ø;
         let y = Double(point.y) / (tile!.Ø / 2)
         let r = floor((floor(y - x) + floor(x + y)) / 3);
@@ -256,7 +255,7 @@ class Touch {
         neighbors.append(guess!)
         
         for tile in neighbors {
-
+            
             let dX = Double(point.x) - tile.center.x;
             let dY = Double(point.y) - tile.center.y;
             tile.delta = (dX * dX) + (dY * dY);

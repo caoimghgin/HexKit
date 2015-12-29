@@ -43,12 +43,12 @@ class TestNeighboringUnitsFor_GridOddHexPointTopped: XCTestCase {
         let hex = HexKit.sharedInstance.tile(q: 25, r: 3)
         let neighbors = HexKit.sharedInstance.neighbors(hex!)
                 
-        XCTAssertTrue(neighbors[0].hex == Hex(q: 24,r: 3))
-        XCTAssertTrue(neighbors[1].hex == Hex(q: 24, r: 4))
-        XCTAssertTrue(neighbors[2].hex == Hex(q: 25, r: 4))
-        XCTAssertTrue(neighbors[3].hex == Hex(q: 26, r: 3))
-        XCTAssertTrue(neighbors[4].hex == Hex(q: 26, r: 2))
-        XCTAssertTrue(neighbors[5].hex == Hex(q: 25, r: 2))
+        XCTAssertTrue(neighbors[5].hex == Hex(q: 24,r: 3))
+        XCTAssertTrue(neighbors[4].hex == Hex(q: 24, r: 4))
+        XCTAssertTrue(neighbors[3].hex == Hex(q: 25, r: 4))
+        XCTAssertTrue(neighbors[2].hex == Hex(q: 26, r: 3))
+        XCTAssertTrue(neighbors[1].hex == Hex(q: 26, r: 2))
+        XCTAssertTrue(neighbors[0].hex == Hex(q: 25, r: 2))
         
     }
     
@@ -58,8 +58,8 @@ class TestNeighboringUnitsFor_GridOddHexPointTopped: XCTestCase {
         let neighbors = HexKit.sharedInstance.neighbors(hex!)
         
         XCTAssertEqual(neighbors.count, 2)
-        XCTAssertTrue(neighbors[0].hex == Hex(q: 24, r: 49))
-        XCTAssertTrue(neighbors[1].hex == Hex(q: 25, r: 48))
+        XCTAssertTrue(neighbors[1].hex == Hex(q: 24, r: 49))
+        XCTAssertTrue(neighbors[0].hex == Hex(q: 25, r: 48))
 
     }
     
@@ -69,9 +69,9 @@ class TestNeighboringUnitsFor_GridOddHexPointTopped: XCTestCase {
         let neighbors = HexKit.sharedInstance.neighbors(hex!)
         
         XCTAssertEqual(neighbors.count, 3)
-        XCTAssertTrue(neighbors[0].hex == Hex(q: 48, r: 0))
+        XCTAssertTrue(neighbors[2].hex == Hex(q: 48, r: 0))
         XCTAssertTrue(neighbors[1].hex == Hex(q: 48, r: 1))
-        XCTAssertTrue(neighbors[2].hex == Hex(q: 49, r: 1))
+        XCTAssertTrue(neighbors[0].hex == Hex(q: 49, r: 1))
 
     }
     
@@ -81,8 +81,8 @@ class TestNeighboringUnitsFor_GridOddHexPointTopped: XCTestCase {
         let neighbors = HexKit.sharedInstance.neighbors(hex!)
         
         XCTAssertEqual(neighbors.count, 2)
-        XCTAssertTrue(neighbors[0].hex == Hex(q: 0, r: 1))
-        XCTAssertTrue(neighbors[1].hex == Hex(q: 1, r: 0))
+        XCTAssertTrue(neighbors[1].hex == Hex(q: 0, r: 1))
+        XCTAssertTrue(neighbors[0].hex == Hex(q: 1, r: 0))
         
     }
     
@@ -92,9 +92,9 @@ class TestNeighboringUnitsFor_GridOddHexPointTopped: XCTestCase {
         let neighbors = HexKit.sharedInstance.neighbors(hex!)
         
         XCTAssertEqual(neighbors.count, 3)
-        XCTAssertTrue(neighbors[0].hex == Hex(q: -23, r: 49))
+        XCTAssertTrue(neighbors[2].hex == Hex(q: -23, r: 49))
         XCTAssertTrue(neighbors[1].hex == Hex(q: -23, r: 48))
-        XCTAssertTrue(neighbors[2].hex == Hex(q: -24, r: 48))
+        XCTAssertTrue(neighbors[0].hex == Hex(q: -24, r: 48))
 
     }
     
