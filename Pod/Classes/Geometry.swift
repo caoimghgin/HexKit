@@ -73,7 +73,7 @@ public func ==(lhs: Hex, rhs: Hex) -> Bool {
     return (lhs.r == rhs.r) && (lhs.q == rhs.q)
 }
 
-struct Cube {
+struct Cube : Equatable {
     
     let x : Int!
     let y : Int!
@@ -82,6 +82,9 @@ struct Cube {
     var description: String {
         return "[x:\(x), y:\(y), z:\(z)]"
     }
+}
+func ==(lhs: Cube, rhs: Cube) -> Bool {
+    return (lhs.x == rhs.x) && (lhs.y == rhs.y) && (lhs.z == rhs.z)
 }
 
 struct Coord  {

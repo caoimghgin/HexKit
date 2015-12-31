@@ -60,7 +60,9 @@ public class Grid : UIView, UIGestureRecognizerDelegate  {
         
         super.init(frame: CGRect(x: 0, y: 0, width: width, height: height))
         
-        self.backgroundColor = UIColor.whiteColor()
+//        self.backgroundColor = UIColor.whiteColor()
+        self.backgroundColor = UIColor.clearColor()
+        
         
     }
     
@@ -79,15 +81,18 @@ public class Grid : UIView, UIGestureRecognizerDelegate  {
         CGContextFillRect(context, rect)
         
         UIColor.lightGrayColor().setStroke()
-        UIColor.cyanColor().setFill()
+//        UIColor.cyanColor().setFill()
+//        UIColor.whiteColor().setFill()
+        UIColor.clearColor().setFill()
+
         
         for (_, tile) in HexKit.sharedInstance.tiles {
             drawBezierPath(tile)
         }
         
-        for (_, tile) in HexKit.sharedInstance.tiles {
-            drawCoordLabel(tile)
-        }
+//        for (_, tile) in HexKit.sharedInstance.tiles {
+//            drawCoordLabel(tile)
+//        }
         
     }
     
@@ -129,7 +134,7 @@ public class Grid : UIView, UIGestureRecognizerDelegate  {
         }
         
         path.fillWithBlendMode(CGBlendMode.Normal, alpha: 0.5)
-        path.lineWidth = 0.5
+        path.lineWidth = 1.0
         path.strokeWithBlendMode(CGBlendMode.Darken, alpha: 0.5)
         path.stroke()
         

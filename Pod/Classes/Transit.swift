@@ -27,6 +27,16 @@
 
 class Transit {
     
+    enum Direction : Int {
+        case N
+        case NE
+        case SE
+        case S
+        case SW
+        case NW
+        case Unknown
+    }
+    
     enum State : Int {
         case Allowed
         case InsufficiantMovementPoints
@@ -70,6 +80,8 @@ class Transit {
         
         if (!itinerary.contains(tile)) && (moves > 0) {
             
+            print(arrivingDirection(departing:self.departing, arriving:tile))
+            
             self.itinerary.append(tile)
             
             CGPathMoveToPoint(path, nil, CGFloat(departing.center.x), CGFloat(departing.center.y))
@@ -93,25 +105,30 @@ class Transit {
                 path = CGPathCreateMutable()
                 
                 var index = 0
-                for foo in itinerary {
+                for destination in itinerary {
                     if (index == 0) {
                         path = CGPathCreateMutable()
-                        CGPathMoveToPoint(path, nil, CGFloat(foo.center.x), CGFloat(foo.center.y))
+                        CGPathMoveToPoint(path, nil, CGFloat(destination.center.x), CGFloat(destination.center.y))
                     } else {
-                        CGPathAddLineToPoint(path, nil, CGFloat(foo.center.x), CGFloat(foo.center.y))
+                        CGPathAddLineToPoint(path, nil, CGFloat(destination.center.x), CGFloat(destination.center.y))
                     }
                     line.path = path
                     index++
                 }
+                
+                return State.Allowed
+
             }
             
             return State.Unexpected
             
         } else if (tile === self.departing) {
+            
             print("CONTAINS DEPARTING HEX")
             return State.Unexpected
             
         } else if !(moves > 0) {
+            
             print("Count move error HEX")
             return State.Unexpected
             
@@ -130,6 +147,21 @@ class Transit {
     func end() {
         path = CGPathCreateMutable()
         line.path = path
+    }
+    
+    func arrivingDirection(departing departing:Tile, arriving:Tile) -> Direction {
+        
+        let cubeDelta = Cube(
+            x:departing.cube.x - arriving.cube.x,
+            y:departing.cube.y - arriving.cube.y,
+            z:departing.cube.z - arriving.cube.z
+        )
+        
+        for i in 0..<HexKit.sharedInstance.directions.count {
+            if (HexKit.sharedInstance.directions[i] == cubeDelta) { return Direction(rawValue: i)!}
+        }
+        
+        return Direction.Unknown
     }
     
 }

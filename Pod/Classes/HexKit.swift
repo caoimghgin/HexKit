@@ -51,7 +51,7 @@ public class HexKit
     
     var turn = Unit.Alliance.Blue
     
-    enum GridTileShape : Int {
+    public enum GridTileShape : Int {
         
         case OddFlat
         case EvenFlat

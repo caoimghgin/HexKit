@@ -49,7 +49,7 @@ public class Tile: Equatable, Hashable, Comparable, CustomStringConvertible {
     var units = [Unit]()
     var ø : Double {get {return (self.shape == Tile.Shape.PointTopped ? self.size.width : self.size.height)}}
     var Ø : Double {get {return (self.shape == Tile.Shape.PointTopped ? self.size.height : self.size.width)}}
-    var hexCorners : Array<Point> {
+    public var hexCorners : Array<Point> {
         get {
             var result = Array<Point>()
             for var i = 0; i <= 6; ++i {
@@ -162,6 +162,10 @@ public class Tile: Equatable, Hashable, Comparable, CustomStringConvertible {
         }
         
         return info
+    }
+    
+    public func occupied() -> Bool {
+        return (units.count > 0) ? true : false
     }
     
     class func keyFormat(q q:Int, r:Int) -> String {

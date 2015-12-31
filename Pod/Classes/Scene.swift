@@ -28,7 +28,7 @@
 import UIKit
 
 public protocol HexKitSceneDelegate {
-    func tileContainingUnitsWasTapped(tile : Tile)
+    func tileWasTapped(tile : Tile)
 }
 
 public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDelegate {
@@ -59,7 +59,39 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
         
         addSubview(board)
         
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: "tapGestureRecognizerAction:")
+        tapGesture.numberOfTapsRequired = 1
+        self.addGestureRecognizer(tapGesture)
+        
     }
+    
+//    + (UIImage *) imageWithView:(UIView *)view
+//    {
+//    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0f);
+//    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:NO];
+//    UIImage * snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    return snapshotImage;
+//    }
+    
+    public func getGridAsImage() -> UIImage {
+        return Scene.imageWithView(self.board.grid)
+    }
+    
+    class func imageWithView(view : UIView) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, true, 2.0)
+        view.drawViewHierarchyInRect(view.bounds, afterScreenUpdates: false)
+        let snapshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return snapshot
+    }
+    
+    
+    func tapGestureRecognizerAction(gesture : UITapGestureRecognizer) {
+        self.sceneDelegate?.tileWasTapped(Touch.tile(gesture))
+    }
+    
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

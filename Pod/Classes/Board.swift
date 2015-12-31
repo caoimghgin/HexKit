@@ -40,7 +40,8 @@ class Board : UIView, UIGestureRecognizerDelegate {
         super.init(frame: grid.frame)
         
         addSubview(artwork)
-        addSubview(grid)
+        addSubview(UIImageView(image: UIImage(imageLiteral: "Tobruk")))
+//        addSubview(grid)
         addSubview(arena)
         
         let panGesture = UIPanGestureRecognizer(target: self, action: "panGestureRecognizerAction:")
@@ -61,16 +62,18 @@ class Board : UIView, UIGestureRecognizerDelegate {
     func tapGestureRecognizerAction(gesture : UITapGestureRecognizer) {
     
         let tile = Touch.tile(gesture)
+        self.sceneDelegate?.tileWasTapped(tile)
+
         
         if (tile.units.count > 0) {
             
-            self.sceneDelegate?.tileContainingUnitsWasTapped(tile)
             
             let unit = tile.units.first
             unit!.superview!.sendSubviewToBack(unit!)
             
             tile.sendUnitToBack(unit!)
             Move.prettyStack(tile)
+            
         }
         
     }
@@ -175,6 +178,7 @@ class Board : UIView, UIGestureRecognizerDelegate {
 }
 
 class Artwork : UIImageView {
+    
     
 }
 

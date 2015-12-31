@@ -29,6 +29,17 @@ class ViewController: UIViewController, HexKitSceneDelegate {
         self.navigationController?.toolbarHidden = false;
         self.navigationController?.navigationBarHidden = true;
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        //
+        let image = scene.getGridAsImage()
+        
+        let documents = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+        let filePath = documents.stringByAppendingString("/grid.png")
+        UIImagePNGRepresentation(image)?.writeToFile(filePath, atomically: true)
+
+        print("")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,18 +50,24 @@ class ViewController: UIViewController, HexKitSceneDelegate {
         return true;
     }
     
-    func tileContainingUnitsWasTapped(tile: Tile) {
+    func tileWasTapped(tile:Tile) {
         
-        let info = tile.occupyingUnitsDetail()
-        let alertController = UIAlertController(title: "Unit Detail", message: "We've returned a tile object containing all the units it contains. We can show more detailed information about those units here. Obviously, not in a standard UIAlertController but in something more customized.\r\r" + info, preferredStyle: .Alert)
-        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in}
-        alertController.addAction(OKAction)
-        
-        self.presentViewController(alertController, animated: true) {
-
+        if (tile.occupied()) {
+            
+            let info = tile.occupyingUnitsDetail()
+            let alertController = UIAlertController(title: "Unit Detail", message: "We've returned a tile object containing all the units it contains. We can show more detailed information about those units here. Obviously, not in a standard UIAlertController but in something more customized.\r\r" + info, preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in}
+            alertController.addAction(OKAction)
+            
+            self.presentViewController(alertController, animated: true) {
+                
+            }
+            
+        } else {
+            
+            print(tile)
+            
         }
-        
-        
     }
 
 }
