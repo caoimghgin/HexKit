@@ -28,6 +28,9 @@
 import Foundation
 import UIKit
 
+/**
+ A structure that contains width and height values.
+*/
 struct Size {
     
     let width : Double!
@@ -47,6 +50,9 @@ struct Size {
     
 }
 
+/**
+ A two dimensional coordinate system for hex grids, using q (column), r (row) variables.
+*/
 public struct Hex : Equatable {
     public let q : Int!
     public let r : Int!
@@ -73,6 +79,9 @@ public func ==(lhs: Hex, rhs: Hex) -> Bool {
     return (lhs.r == rhs.r) && (lhs.q == rhs.q)
 }
 
+/**
+ A three dimensional coordinate system handy for calculating distances and relationships for hex grids.
+*/
 struct Cube : Equatable {
     
     let x : Int!
@@ -87,6 +96,9 @@ func ==(lhs: Cube, rhs: Cube) -> Bool {
     return (lhs.x == rhs.x) && (lhs.y == rhs.y) && (lhs.z == rhs.z)
 }
 
+/**
+A two dimensional coordinate system for hex grids.
+*/
 struct Coord  {
     let x : Int!
     let y : Int!
@@ -100,6 +112,9 @@ struct Coord  {
     }
 }
 
+/**
+A structure that contains the location and dimensions of a rectangle. The context is flipped-coordinate, origin is upper-left corner and the rectangle extends towards the lower right.
+*/
 struct Rect {
     let origin : Point!
     let size : Size!
@@ -113,6 +128,9 @@ struct Rect {
     }
 }
 
+/**
+A structure that contains a point in a two-dimensional coordinate system.
+*/
 public struct Point {
     
     public let x : Double!
@@ -148,6 +166,13 @@ func -= (inout left: Point, right: Point) {
     left = left - right
 }
 
+/**
+Size of Tile for given radius and hexagon (Tile) shape
+ - parameter radius: Double
+ - parameter type: Tile.Shape
+
+ - returns: Size
+*/
 func hexTileSize(radius:Double, type:Tile.Shape) -> Size {
     
     let y = radius * 2
@@ -162,6 +187,13 @@ func hexTileSize(radius:Double, type:Tile.Shape) -> Size {
     }
 }
 
+/**
+ Hexagon offset for given hexagon (Tile) shape and size. Returns center point of Tile for grid construction.
+ - parameter shape: Tile.Shape
+ - parameter size: Size
+ 
+ - returns: Center point of tile
+ */
 func offsetForHex(shape: Tile.Shape, size : Size) -> Point {
 
     if (shape == Tile.Shape.FlatTopped) {

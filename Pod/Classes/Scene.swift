@@ -36,13 +36,21 @@ public class Scene: UIScrollView, UIScrollViewDelegate, UIGestureRecognizerDeleg
     var board : Board
     var sceneDelegate = HexKitSceneDelegate?()
     
+    /**
+     Creates a HexKit scene.
+     
+     - parameter controller: UIViewController which presents the scene
+     - parameter parameters: pList file parameters
+
+     - returns: Scene
+     */
     public convenience init(controller:UIViewController, parameters: String) {
         HexKit.sharedInstance.start(parameters)
         self.init(frame:controller.view.frame)
         self.sceneDelegate = controller as? HexKitSceneDelegate
         self.board.sceneDelegate = self.sceneDelegate
     }
-    
+
     public override init(frame: CGRect) {
         
         self.board = Board()

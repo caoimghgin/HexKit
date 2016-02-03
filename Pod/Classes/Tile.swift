@@ -29,8 +29,15 @@ import UIKit
 
 public func ==(lhs: Tile, rhs: Tile) -> Bool {return lhs.hashValue == rhs.hashValue}
 public func <(lhs: Tile, rhs: Tile) -> Bool {return lhs.delta < rhs.delta}
+
+/// Tile that holds a hexagon
 public class Tile: Equatable, Hashable, Comparable, CustomStringConvertible {
     
+    /**
+     Shape of hexagon in tile.
+     - FlatTopped: Hexagon top is flat
+     - PointTopped: Hexagon top is point
+     */
     public enum Shape : Int {
         case FlatTopped
         case PointTopped
