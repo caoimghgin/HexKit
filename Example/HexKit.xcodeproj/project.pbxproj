@@ -13,6 +13,11 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		60BA376E3E62BFEA8D9C72E5 /* Pods_HexKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7191E4DA7E239AE465086480 /* Pods_HexKit_Tests.framework */; };
+		998741D61CBE5AD700EB571E /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993993031CBDC566002E334D /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */; };
+		998741D71CBE5ADB00EB571E /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993993041CBDC566002E334D /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */; };
+		998741D81CBE5ADF00EB571E /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993993051CBDC566002E334D /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */; };
+		998741D91CBE5AE100EB571E /* TestHexCenterPointsOddFlat6x6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993993061CBDC566002E334D /* TestHexCenterPointsOddFlat6x6.swift */; };
+		998741DA1CBE5AE400EB571E /* TestHexCenterPointsEvenFlat6x6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993993071CBDC566002E334D /* TestHexCenterPointsEvenFlat6x6.swift */; };
 		99B5EF561CBDBECE00A70D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B5EF551CBDBECE00A70D8B /* Assets.xcassets */; };
 		99B5EF6C1CBDC30200A70D8B /* Scene.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99B5EF6B1CBDC30200A70D8B /* Scene.plist */; };
 		D4ACC0EAC7FEC77DD57D1F3C /* Pods_HexKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB37F0ECA115AA3A1BD1B7F2 /* Pods_HexKit_Example.framework */; };
@@ -383,6 +388,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				998741D81CBE5ADF00EB571E /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift in Sources */,
+				998741D61CBE5AD700EB571E /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift in Sources */,
+				998741D71CBE5ADB00EB571E /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift in Sources */,
+				998741D91CBE5AE100EB571E /* TestHexCenterPointsOddFlat6x6.swift in Sources */,
+				998741DA1CBE5AE400EB571E /* TestHexCenterPointsEvenFlat6x6.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

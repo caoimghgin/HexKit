@@ -39,8 +39,8 @@ class Board : UIView, UIGestureRecognizerDelegate {
         
         super.init(frame: grid.frame)
         
-        addSubview(artwork)
-        addSubview(UIImageView(image: UIImage(imageLiteral: "Tobruk")))
+//        addSubview(artwork)
+//        addSubview(UIImageView(image: UIImage(imageLiteral: "Tobruk")))
 //        addSubview(grid)
         addSubview(arena)
         
