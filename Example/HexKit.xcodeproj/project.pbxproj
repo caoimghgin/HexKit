@@ -7,21 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2111F9F915318C70B1B12B5A /* Pods_HexKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678A6B4E7FC07143C2192B9B /* Pods_HexKit_Example.framework */; };
-		5FCC346D6E6DAFDD8DA36F37 /* Pods_HexKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2227258EEF0D88FAF6706010 /* Pods_HexKit_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		996909111C285EB100289444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996909101C285EB100289444 /* Assets.xcassets */; };
-		996909131C28668900289444 /* Scene.plist in Resources */ = {isa = PBXBuildFile; fileRef = 996909121C28668900289444 /* Scene.plist */; };
-		9969091F1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969091E1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */; };
-		9969092F1C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909271C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift */; };
-		996909301C28A92200289444 /* TestHexCenterPointsOddFlat6x6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909261C28A73C00289444 /* TestHexCenterPointsOddFlat6x6.swift */; };
-		996909351C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909341C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */; };
-		996909371C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996909361C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */; };
+		60BA376E3E62BFEA8D9C72E5 /* Pods_HexKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7191E4DA7E239AE465086480 /* Pods_HexKit_Tests.framework */; };
+		99B5EF561CBDBECE00A70D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B5EF551CBDBECE00A70D8B /* Assets.xcassets */; };
+		99B5EF6C1CBDC30200A70D8B /* Scene.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99B5EF6B1CBDC30200A70D8B /* Scene.plist */; };
+		D4ACC0EAC7FEC77DD57D1F3C /* Pods_HexKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB37F0ECA115AA3A1BD1B7F2 /* Pods_HexKit_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2227258EEF0D88FAF6706010 /* Pods_HexKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23AC9743A618D4C0DFD75968 /* Pods-HexKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HexKit_Tests/Pods-HexKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		374ADE2BDA199DF118AD1A95 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3DCE9AA17B4696033D5CB969 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4CDF1F71DBB79E76F375FC87 /* Pods-HexKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HexKit_Example/Pods-HexKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4E41313804EFF6BAD8174996 /* Pods-HexKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HexKit_Tests/Pods-HexKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4EEC1B71559DECADDD2310AF /* Pods-HexKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HexKit_Example/Pods-HexKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		109A9C8CEFD38624A6D03106 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5B33D1AA348E0388A3AFD824 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HexKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,16 +40,20 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* HexKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		678A6B4E7FC07143C2192B9B /* Pods_HexKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D04B0D49F85A03A619FB23F /* HexKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HexKit.podspec; path = ../HexKit.podspec; sourceTree = "<group>"; };
-		996909101C285EB100289444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		996909121C28668900289444 /* Scene.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Scene.plist; sourceTree = "<group>"; };
-		9969091E1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridEvenHexPointTopped.swift; sourceTree = "<group>"; };
-		996909261C28A73C00289444 /* TestHexCenterPointsOddFlat6x6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHexCenterPointsOddFlat6x6.swift; sourceTree = "<group>"; };
-		996909271C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHexCenterPointsEvenFlat6x6.swift; sourceTree = "<group>"; };
-		996909341C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridOddHexPointTopped.swift; sourceTree = "<group>"; };
-		996909361C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridOddHexFlatTopped.swift; sourceTree = "<group>"; };
+		7191E4DA7E239AE465086480 /* Pods_HexKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD93F53AF01568D19956DC9 /* Pods-HexKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HexKit_Tests/Pods-HexKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		83FC6C6A3B5D2309272F6328 /* Pods-HexKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HexKit_Example/Pods-HexKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		993993031CBDC566002E334D /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridEvenHexPointTopped.swift; sourceTree = "<group>"; };
+		993993041CBDC566002E334D /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridOddHexPointTopped.swift; sourceTree = "<group>"; };
+		993993051CBDC566002E334D /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNeighboringUnitsFor_GridOddHexFlatTopped.swift; sourceTree = "<group>"; };
+		993993061CBDC566002E334D /* TestHexCenterPointsOddFlat6x6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHexCenterPointsOddFlat6x6.swift; sourceTree = "<group>"; };
+		993993071CBDC566002E334D /* TestHexCenterPointsEvenFlat6x6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHexCenterPointsEvenFlat6x6.swift; sourceTree = "<group>"; };
+		99B5EF551CBDBECE00A70D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99B5EF6B1CBDC30200A70D8B /* Scene.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Scene.plist; sourceTree = "<group>"; };
+		A0E403CB0961EEB033FD461D /* Pods-HexKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HexKit_Example/Pods-HexKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A9508E483EDA6AE18E25C402 /* Pods-HexKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HexKit_Tests/Pods-HexKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DB37F0ECA115AA3A1BD1B7F2 /* Pods_HexKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB34BC7D68EB7FE470A7134D /* HexKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HexKit.podspec; path = ../HexKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2111F9F915318C70B1B12B5A /* Pods_HexKit_Example.framework in Frameworks */,
+				D4ACC0EAC7FEC77DD57D1F3C /* Pods_HexKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +69,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FCC346D6E6DAFDD8DA36F37 /* Pods_HexKit_Tests.framework in Frameworks */,
+				60BA376E3E62BFEA8D9C72E5 /* Pods_HexKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DA82884D93745612BD21238 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB37F0ECA115AA3A1BD1B7F2 /* Pods_HexKit_Example.framework */,
+				7191E4DA7E239AE465086480 /* Pods_HexKit_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -90,8 +92,8 @@
 				607FACD21AFB9204008FA782 /* Example for HexKit */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				F946CE321CAF0F21D26D149D /* Pods */,
-				7FAB97E8A8DA76D41C021519 /* Frameworks */,
+				BD2867852862B1308C53E63F /* Pods */,
+				0DA82884D93745612BD21238 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +113,7 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				996909101C285EB100289444 /* Assets.xcassets */,
+				99B5EF551CBDBECE00A70D8B /* Assets.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -123,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-				996909121C28668900289444 /* Scene.plist */,
+				99B5EF6B1CBDC30200A70D8B /* Scene.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,13 +133,12 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				993993031CBDC566002E334D /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */,
+				993993041CBDC566002E334D /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */,
+				993993051CBDC566002E334D /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */,
+				993993061CBDC566002E334D /* TestHexCenterPointsOddFlat6x6.swift */,
+				993993071CBDC566002E334D /* TestHexCenterPointsEvenFlat6x6.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
-				9969091E1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift */,
-				996909341C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift */,
-				996909361C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift */,
-				996909261C28A73C00289444 /* TestHexCenterPointsOddFlat6x6.swift */,
-				996909271C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -153,29 +154,20 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				8D04B0D49F85A03A619FB23F /* HexKit.podspec */,
-				374ADE2BDA199DF118AD1A95 /* README.md */,
-				3DCE9AA17B4696033D5CB969 /* LICENSE */,
+				EB34BC7D68EB7FE470A7134D /* HexKit.podspec */,
+				5B33D1AA348E0388A3AFD824 /* README.md */,
+				109A9C8CEFD38624A6D03106 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		7FAB97E8A8DA76D41C021519 /* Frameworks */ = {
+		BD2867852862B1308C53E63F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				678A6B4E7FC07143C2192B9B /* Pods_HexKit_Example.framework */,
-				2227258EEF0D88FAF6706010 /* Pods_HexKit_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F946CE321CAF0F21D26D149D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4CDF1F71DBB79E76F375FC87 /* Pods-HexKit_Example.debug.xcconfig */,
-				4EEC1B71559DECADDD2310AF /* Pods-HexKit_Example.release.xcconfig */,
-				23AC9743A618D4C0DFD75968 /* Pods-HexKit_Tests.debug.xcconfig */,
-				4E41313804EFF6BAD8174996 /* Pods-HexKit_Tests.release.xcconfig */,
+				A0E403CB0961EEB033FD461D /* Pods-HexKit_Example.debug.xcconfig */,
+				83FC6C6A3B5D2309272F6328 /* Pods-HexKit_Example.release.xcconfig */,
+				7CD93F53AF01568D19956DC9 /* Pods-HexKit_Tests.debug.xcconfig */,
+				A9508E483EDA6AE18E25C402 /* Pods-HexKit_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -187,12 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "HexKit_Example" */;
 			buildPhases = (
-				63E2F233E37F64820AA18F62 /* Check Pods Manifest.lock */,
+				5CCEA94F2691001455667C66 /* Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				9834FF739F90BAADC09AC529 /* Embed Pods Frameworks */,
-				115F151A17B37F568C1B0A7A /* Copy Pods Resources */,
+				12A057FA90D203FDDCD65FC5 /* Embed Pods Frameworks */,
+				75774A9AF1F7F754F615BAFB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,12 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "HexKit_Tests" */;
 			buildPhases = (
-				7F40DC4CC7007AE65C89E91E /* Check Pods Manifest.lock */,
+				9A3F16100DA869D3A823CEFE /* Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				A994C5FE53494F5921C7F7BF /* Embed Pods Frameworks */,
-				4DDF072E7EE80B16141D87EB /* Copy Pods Resources */,
+				114307C6064F232A8776D994 /* Embed Pods Frameworks */,
+				916911800C0549E7DABD6969 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,7 +222,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -268,9 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				996909131C28668900289444 /* Scene.plist in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				996909111C285EB100289444 /* Assets.xcassets in Resources */,
+				99B5EF6C1CBDC30200A70D8B /* Scene.plist in Resources */,
+				99B5EF561CBDBECE00A70D8B /* Assets.xcassets in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,67 +277,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		115F151A17B37F568C1B0A7A /* Copy Pods Resources */ = {
+		114307C6064F232A8776D994 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HexKit_Example/Pods-HexKit_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HexKit_Tests/Pods-HexKit_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4DDF072E7EE80B16141D87EB /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HexKit_Tests/Pods-HexKit_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		63E2F233E37F64820AA18F62 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7F40DC4CC7007AE65C89E91E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9834FF739F90BAADC09AC529 /* Embed Pods Frameworks */ = {
+		12A057FA90D203FDDCD65FC5 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,19 +307,64 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HexKit_Example/Pods-HexKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A994C5FE53494F5921C7F7BF /* Embed Pods Frameworks */ = {
+		5CCEA94F2691001455667C66 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HexKit_Tests/Pods-HexKit_Tests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75774A9AF1F7F754F615BAFB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HexKit_Example/Pods-HexKit_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		916911800C0549E7DABD6969 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HexKit_Tests/Pods-HexKit_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3F16100DA869D3A823CEFE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -391,12 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				996909371C28B19900289444 /* TestNeighboringUnitsFor_GridOddHexFlatTopped.swift in Sources */,
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-				9969091F1C28A5F700289444 /* TestNeighboringUnitsFor_GridEvenHexPointTopped.swift in Sources */,
-				9969092F1C28A73C00289444 /* TestHexCenterPointsEvenFlat6x6.swift in Sources */,
-				996909301C28A92200289444 /* TestHexCenterPointsOddFlat6x6.swift in Sources */,
-				996909351C28AF8400289444 /* TestNeighboringUnitsFor_GridOddHexPointTopped.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +500,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CDF1F71DBB79E76F375FC87 /* Pods-HexKit_Example.debug.xcconfig */;
+			baseConfigurationReference = A0E403CB0961EEB033FD461D /* Pods-HexKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HexKit/Info.plist;
@@ -528,7 +514,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EEC1B71559DECADDD2310AF /* Pods-HexKit_Example.release.xcconfig */;
+			baseConfigurationReference = 83FC6C6A3B5D2309272F6328 /* Pods-HexKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HexKit/Info.plist;
@@ -542,9 +528,9 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23AC9743A618D4C0DFD75968 /* Pods-HexKit_Tests.debug.xcconfig */;
+			baseConfigurationReference = 7CD93F53AF01568D19956DC9 /* Pods-HexKit_Tests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -557,15 +543,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexKit_Example.app/HexKit_Example";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E41313804EFF6BAD8174996 /* Pods-HexKit_Tests.release.xcconfig */;
+			baseConfigurationReference = A9508E483EDA6AE18E25C402 /* Pods-HexKit_Tests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -574,7 +560,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexKit_Example.app/HexKit_Example";
 			};
 			name = Release;
 		};

@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  HexKit
 //
-//  Copyright © 2015 Kevin Muldoon.
-//  https://github.com/caoimghgin/HexKit
+//  Created by Kevin Muldoon on 04/12/2016.
+//  Copyright (c) 2016 Kevin Muldoon. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class ViewController: UIViewController, HexKitSceneDelegate {
     private lazy var scene:Scene = {
         return Scene(controller: self, parameters: "Scene")
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,23 +25,23 @@ class ViewController: UIViewController, HexKitSceneDelegate {
         scene.placeUnit(scene.tile(q: 3, r: -1))
         scene.placeUnit(scene.tile(q: 2, r: -1))
         scene.placeUnit(scene.tile(q: 1, r: 0))
-
+        
         self.navigationController?.toolbarHidden = false;
         self.navigationController?.navigationBarHidden = true;
-     
+        
     }
     
     override func viewDidAppear(animated: Bool) {
-        //
+
         let image = scene.getGridAsImage()
         
         let documents = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
         let filePath = documents.stringByAppendingString("/grid.png")
         UIImagePNGRepresentation(image)?.writeToFile(filePath, atomically: true)
-
+        
         print("")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
